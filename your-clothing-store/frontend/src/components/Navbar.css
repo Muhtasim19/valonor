@@ -1,0 +1,111 @@
+/* Navbar Container */
+.navbar {
+  background-color: #fff; /* White background */
+  height: 80px; /* Fixed height */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  font-size: 1.2rem;
+  position: sticky; /* Makes the navbar stick to the top when scrolling */
+  top: 0;
+  z-index: 999; /* Ensures it's above other content */
+  border-bottom: 1px solid #eee; /* Subtle bottom border for definition */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space out logo, menu, and icons */
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1300px; /* Max width for content to prevent stretching on large screens */
+  padding: 0 24px; /* Padding on sides */
+}
+
+/* Logo */
+.navbar-logo {
+  color: #000; /* Black text */
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold; /* Make logo stand out */
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* 4 columns for 4 links */
+  grid-gap: 20px; /* Space between links */
+  list-style: none; /* Remove bullet points */
+  text-align: center;
+  margin-right: -22px; /* Adjust for padding/gap */
+}
+
+.nav-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: #000; /* Black text for links */
+  text-decoration: none;
+  padding: 8px 16px; /* Padding around text for hover area */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-out; /* Smooth hover effect */
+}
+
+.nav-links:hover {
+  color: #555; /* Slightly lighter black/grey on hover */
+  border-bottom: 3px solid #000; /* Subtle underline on hover */
+}
+
+/* Right-aligned Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between icons */
+}
+
+.nav-icon-link {
+  color: #000; /* Black text/icon color */
+  font-size: 1.5rem; /* Icon size */
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon-link:hover {
+  color: #555; /* Slightly lighter black/grey on hover */
+}
+
+.cart-item-count {
+  background-color: #000; /* Black background for count bubble */
+  color: #fff; /* White text for count */
+  font-size: 0.7rem;
+  border-radius: 50%; /* Circle shape */
+  padding: 2px 6px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  line-height: 1; /* Adjust vertical alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Basic responsiveness for smaller screens (adjust as needed) */
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: none; /* Hide main menu on smaller screens for now */
+  }
+  .nav-icons {
+    margin-left: auto; /* Push icons to the right */
+  }
+}
