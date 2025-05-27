@@ -1,2 +1,0 @@
-# valonor
-An ecommerce website
