@@ -1,54 +1,52 @@
 import React from 'react';
-import './Navbar.css'; // We'll create this CSS file next
+import { Link } from 'react-router-dom'; // Import Link
+import './Navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo/Brand Name */}
-        <a href="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo"> {/* Use Link instead of a */}
           VALONOR
-        </a>
+        </Link>
 
         {/* Primary Navigation Links */}
         <ul className="nav-menu">
           <li className="nav-item">
-            <a href="/men" className="nav-links">
+            <Link to="/men" className="nav-links"> {/* Use Link */}
               Men
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="/women" className="nav-links">
+            <Link to="/women" className="nav-links"> {/* Use Link */}
               Women
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="/new-arrivals" className="nav-links">
+            <Link to="/new-arrivals" className="nav-links"> {/* Use Link */}
               New Arrivals
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="/sale" className="nav-links">
+            <Link to="/sale" className="nav-links"> {/* Use Link */}
               Sale
-            </a>
+            </Link>
           </li>
         </ul>
 
         {/* Right-aligned Icons (Search, User, Cart) */}
         <div className="nav-icons">
-          <a href="/search" className="nav-icon-link">
-            {/* Replace with an actual search icon (e.g., SVG or Font Awesome) */}
-            <span className="icon">🔍</span> {/* Placeholder */}
-          </a>
-          <a href="/account" className="nav-icon-link">
-            {/* Replace with an actual user icon */}
-            <span className="icon">👤</span> {/* Placeholder */}
-          </a>
-          <a href="/cart" className="nav-icon-link">
-            {/* Replace with an actual cart icon */}
-            <span className="icon">🛒</span> {/* Placeholder */}
-            <span className="cart-item-count">0</span> {/* Placeholder for item count */}
-          </a>
+          <Link to="/search" className="nav-icon-link"> {/* Use Link */}
+            <span className="icon">🔍</span>
+          </Link>
+          <Link to="/account" className="nav-icon-link"> {/* Use Link */}
+            <span className="icon">👤</span>
+          </Link>
+          <Link to="/cart" className="nav-icon-link"> {/* Use Link */}
+            <span className="icon">🛒</span>
+            <span className="cart-item-count">0</span>
+          </Link>
         </div>
       </div>
     </nav>
