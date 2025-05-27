@@ -1,0 +1,147 @@
+/* Footer Container */
+.footer {
+  background-color: #f8f8f8; /* A very light grey background for subtle contrast */
+  color: #000; /* Black text */
+  padding: 60px 24px; /* Ample vertical padding */
+  font-size: 0.95rem;
+  border-top: 1px solid #eee; /* Subtle top border */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+  justify-content: space-between; /* Space out sections */
+  max-width: 1300px;
+  margin: 0 auto; /* Center the container */
+  gap: 30px; /* Gap between sections */
+}
+
+.footer-section {
+  flex: 1; /* Allow sections to grow */
+  min-width: 200px; /* Minimum width before wrapping */
+}
+
+.footer-section h3,
+.footer-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000; /* Black heading text */
+}
+
+/* Logo/Brand Info */
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333; /* Slightly lighter black for body text */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #000; /* Black icons */
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+.social-icon:hover {
+  color: #555; /* Dark grey on hover */
+}
+
+/* Quick Links & Customer Service Lists */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #333; /* Dark grey for links */
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+.footer-link:hover {
+  color: #000; /* Black on hover */
+  text-decoration: underline;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-input {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 4px 0 0 4px; /* Rounded left corner */
+  flex-grow: 1;
+  max-width: 250px;
+  color: #000; /* Ensure text is black */
+}
+
+.newsletter-input::placeholder {
+    color: #777; /* Placeholder text color */
+}
+
+.newsletter-button {
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0; /* Rounded right corner */
+  transition: background-color 0.2s ease-out;
+}
+
+.newsletter-button:hover {
+  background-color: #333; /* Darker grey on hover */
+}
+
+/* Bottom Footer Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee; /* Separator line */
+  color: #555; /* Lighter grey for copyright */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center items */
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px; /* Space between stacked sections */
+    min-width: unset; /* Remove min-width to allow full width */
+  }
+
+  .social-icons {
+    justify-content: center; /* Center social icons */
+  }
+
+  .newsletter-form {
+    justify-content: center; /* Center newsletter form */
+  }
+}

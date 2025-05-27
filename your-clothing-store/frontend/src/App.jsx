@@ -1,18 +1,20 @@
 import React from 'react';
-import Navbar from './components/Navbar'; // Import the Navbar component
-import './App.css'; // Keep or modify this for global App styles
+import Navbar from './components/Navbar';
+import Footer from './components/Footer'; // Import the Footer component
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       {/* Your main content will go here, like the Homepage component */}
-      <main style={{ padding: '20px', textAlign: 'center' }}>
+      <main style={{ padding: '60px 20px', textAlign: 'center', minHeight: 'calc(100vh - 80px - 280px)' }}>
+        {/* minHeight here is a rough estimate to push footer down, will refine with proper content */}
         <h1>Welcome to VALONOR</h1>
         <p>Your premium destination for fashion.</p>
         {/* This will be replaced by your Homepage component later */}
       </main>
-      {/* We'll add the Footer component here later */}
+      <Footer /> {/* Render the Footer component */}
     </div>
   );
 }
