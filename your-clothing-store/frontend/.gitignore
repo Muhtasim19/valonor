@@ -1,0 +1,23 @@
+# Python
+venv/
+*.pyc
+__pycache__/
+.env
+.DS_Store
+db.sqlite3 # If you were using SQLite, but not needed with PostgreSQL
+
+# Django specific
+/backend/.vscode/
+/backend/your_clothing_store/local_settings.py # For sensitive settings like SECRET_KEY
+/backend/media/ # Where uploaded files will go
+/backend/static/ # Collected static files
+
+# Node / React
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/.env.local
+/frontend/build/
+
+# VS Code
+.vscode/
