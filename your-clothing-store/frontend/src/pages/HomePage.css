@@ -1,0 +1,195 @@
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Takes up 70% of the viewport height */
+  background-image: url('https://via.placeholder.com/1920x800/000000/FFFFFF?text=VALONOR+New+Collection'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White text on dark background */
+  text-align: center;
+  overflow: hidden; /* Ensure content doesn't spill out */
+}
+
+.hero-content {
+  z-index: 1; /* Ensure text is above background */
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 2px; /* Adds a touch of luxury */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: #fff; /* White button background */
+  color: #000; /* Black button text */
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border: 2px solid #fff; /* White border */
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-button:hover {
+  background-color: #000; /* Black background on hover */
+  color: #fff; /* White text on hover */
+  border-color: #000;
+}
+
+/* Shop by Gender Section */
+.shop-by-gender-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between the cards */
+  padding: 80px 24px;
+  background-color: #fff; /* White background */
+}
+
+.gender-card {
+  flex: 1;
+  min-width: 300px;
+  height: 400px; /* Fixed height for visual consistency */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gender-card:hover {
+  transform: translateY(-10px); /* Subtle lift effect on hover */
+}
+
+.men-card {
+  background-image: url('https://via.placeholder.com/600x400/333333/FFFFFF?text=Shop+Men'); /* Placeholder image for men */
+}
+
+.women-card {
+  background-image: url('https://via.placeholder.com/600x400/555555/FFFFFF?text=Shop+Women'); /* Placeholder image for women */
+}
+
+.gender-link {
+  position: absolute; /* Allows text to be centered and overlaid */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.gender-link:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay on hover */
+}
+
+.gender-card h2 {
+  color: #fff; /* White text */
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 2px solid #fff; /* White border around text */
+}
+
+/* Featured Products Section */
+.featured-products-section {
+  padding: 80px 24px;
+  background-color: #f8f8f8; /* Light grey background for this section */
+  text-align: center;
+}
+
+.featured-products-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #000;
+  font-weight: 600;
+}
+
+.product-grid-placeholder {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 50px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .hero-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .shop-by-gender-section {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+  }
+
+  .gender-card {
+    width: 100%; /* Take full width when stacked */
+    max-width: 450px; /* Max width for single column */
+    height: 300px;
+  }
+
+  .gender-card h2 {
+    font-size: 2rem;
+  }
+
+  .featured-products-section {
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
