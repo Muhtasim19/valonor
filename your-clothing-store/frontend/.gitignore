@@ -1,23 +1,24 @@
-# Python
-venv/
-*.pyc
-__pycache__/
-.env
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-db.sqlite3 # If you were using SQLite, but not needed with PostgreSQL
-
-# Django specific
-/backend/.vscode/
-/backend/your_clothing_store/local_settings.py # For sensitive settings like SECRET_KEY
-/backend/media/ # Where uploaded files will go
-/backend/static/ # Collected static files
-
-# Node / React
-/frontend/node_modules/
-/frontend/dist/
-/frontend/.vite/
-/frontend/.env.local
-/frontend/build/
-
-# VS Code
-.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
