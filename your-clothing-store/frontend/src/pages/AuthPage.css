@@ -1,0 +1,112 @@
+.auth-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px - 280px); /* Adjust to push footer down, similar to main content */
+  padding: 40px 20px;
+  background-color: #f5f5f5; /* Light background for the auth pages */
+}
+
+.auth-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px; /* Max width for the card */
+  text-align: center;
+}
+
+.auth-title {
+  font-size: 2.2rem;
+  color: #000;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form groups */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.auth-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #333;
+}
+
+.auth-link-text {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.auth-link-text a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-out;
+}
+
+.auth-link-text a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .auth-card {
+    padding: 30px 20px;
+    margin: 0 15px; /* Add some side margin */
+  }
+  .auth-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .auth-button {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+}
